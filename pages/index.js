@@ -4,6 +4,7 @@ import Intro from '../components/Intro';
 import About from './about';
 import Portfolio from './portfolio';
 import CV from './cv';
+import GetInTouch from '../components/GetInTouch';
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <About />
       <Portfolio />
       <CV />
+      <GetInTouch />
     </div>
   );
 };

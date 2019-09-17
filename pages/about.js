@@ -37,19 +37,54 @@ const About = () => (
     </p>
     <div className='tech_stack'>
       <div className='tech_stack_1'>
-        <img width='50' src='/static/html.png' alt='HTML' />
-        <img width='60' src='/static/css.png' alt='css' />
-        <img width='50' src='/static/javascript.png' alt='javascript' />
-        <img width='100' src='/static/node_js.png' alt='node_js' />
-        <img width='100' src='/static/mongodb.png' alt='mongodb' />
-        <img width='90' src='/static/react_js.png' alt='react_js' />
+        <img width='50' src='/static/html.png' alt='HTML' title='HTML 5' />
+        <img width='60' src='/static/css.png' alt='css' title='CSS 3' />
+        <img
+          width='50'
+          src='/static/javascript.png'
+          alt='javascript'
+          title='Javascript'
+        />
+        <img
+          width='100'
+          src='/static/node_js.png'
+          alt='node_js'
+          title='Node.js'
+        />
+        <img
+          width='100'
+          src='/static/mongodb.png'
+          alt='mongodb'
+          title='MongoDB'
+        />
+        <img
+          width='90'
+          src='/static/react_js.png'
+          alt='react_js'
+          title='React.js'
+        />
       </div>
       <div className='tech_stack_2'>
-        <img width='100' src='/static/redux_js.png' alt='redux_js' />
-        <img width='100' src='/static/graphql.png' alt='graphql' />
-        <img width='90' src='/static/apollo.png' alt='apollo' />
-        <img width='100' src='/static/prisma.png' alt='prisma' />
-        <img width='50' src='/static/python.png' alt='python' />
+        <img
+          width='100'
+          src='/static/redux_js.png'
+          alt='redux_js'
+          title='Redux.js'
+        />
+        <img
+          width='100'
+          src='/static/graphql.png'
+          alt='graphql'
+          title='GraphQL'
+        />
+        <img
+          width='90'
+          src='/static/apollo.png'
+          alt='apollo'
+          title='Apollo Client'
+        />
+        <img width='100' src='/static/prisma.png' alt='prisma' title='Prisma' />
+        <img width='50' src='/static/python.png' alt='python' title='Python' />
       </div>
     </div>
   </AboutStyles>
