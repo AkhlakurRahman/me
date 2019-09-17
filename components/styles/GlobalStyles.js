@@ -20,6 +20,21 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     line-height: 1.6;
   }
+
+  h1, h2, h3, h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 100rem;
+    margin: auto;
+  }
+
+  ::selection {
+    background-color: rgba(16, 29, 44, 0.75);
+    color: #dce6de;
+  }
 `;
 
 export default GlobalStyles;

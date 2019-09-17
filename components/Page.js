@@ -17,7 +17,6 @@ class Page extends Component {
       <ThemeProvider theme={theme}>
         <>
           <Meta></Meta>
-          <Header></Header>
           {this.props.children}
         </>
       </ThemeProvider>

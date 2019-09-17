@@ -8,13 +8,12 @@ const NavStyles = styled.div`
   font-size: 1.7rem;
   font-family: ${props => props.theme.font_display};
   a {
-    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: ${props => props.theme.color_primary};
     padding: 0.5rem 1rem;
     margin-right: 1rem;
-    transition: border-bottom 0.2s;
+    transition: all 0.4s;
     &::after {
       content: '';
       display: block;
