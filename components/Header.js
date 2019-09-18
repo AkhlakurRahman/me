@@ -26,7 +26,7 @@ const StyledHeader = styled.div`
   padding: 2rem 0;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  transition: all 0.4s;
+  transition: all 0.4s ease;
   ${props =>
     props.scroll &&
     `
@@ -44,7 +44,6 @@ class Header extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', () => {
       const isOnTop = window.scrollY > 100;
-      const navbar = document.getElementById('navbar');
       if (isOnTop) {
         this.setState({ scroll: true });
       } else {

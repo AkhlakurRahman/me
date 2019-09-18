@@ -12,7 +12,6 @@ const Index = () => {
       <Intro />
       <About />
       <Portfolio />
-      <CV />
       <GetInTouch />
     </div>
   );

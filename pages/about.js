@@ -12,7 +12,7 @@ const AboutStyles = styled.div`
     margin-top: 7rem;
   }
   p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -38,7 +38,7 @@ const About = () => (
     <div className='tech_stack'>
       <div className='tech_stack_1'>
         <img width='50' src='/static/html.png' alt='HTML' title='HTML 5' />
-        <img width='60' src='/static/css.png' alt='css' title='CSS 3' />
+        <img width='40' src='/static/css.png' alt='css' title='CSS 3' />
         <img
           width='50'
           src='/static/javascript.png'
@@ -67,6 +67,12 @@ const About = () => (
       <div className='tech_stack_2'>
         <img
           width='100'
+          src='/static/next_js.png'
+          alt='next_js'
+          title='Next.js'
+        />
+        <img
+          width='100'
           src='/static/redux_js.png'
           alt='redux_js'
           title='Redux.js'
@@ -83,7 +89,7 @@ const About = () => (
           alt='apollo'
           title='Apollo Client'
         />
-        <img width='100' src='/static/prisma.png' alt='prisma' title='Prisma' />
+        <img width='120' src='/static/prisma.png' alt='prisma' title='Prisma' />
         <img width='50' src='/static/python.png' alt='python' title='Python' />
       </div>
     </div>

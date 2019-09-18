@@ -40,7 +40,7 @@ class GetInTouch extends React.Component {
             <ul>
               <li>
                 <a href='https://github.com/AkhlakurRahman' target='_blank'>
-                  <i class='fab fa-github'></i>
+                  <i className='fab fa-github'></i>
                 </a>
               </li>
               <li>
@@ -56,7 +56,7 @@ class GetInTouch extends React.Component {
                   href='https://mail.google.com/mail/?view=cm&fs=1&to=akhlakur.rahmann@gmail.com'
                   target='_blank'
                 >
-                  <i class='fas fa-envelope'></i>
+                  <i className='fas fa-envelope'></i>
                 </a>
               </li>
               <li>

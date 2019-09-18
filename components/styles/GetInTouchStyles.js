@@ -100,11 +100,17 @@ const GetInTouchStyles = styled.div`
     bottom: 20px;
     right: 20px;
     z-index: 999;
+    transition: all 0.4s;
   }
 
   .floating-btn:hover {
+    transform: translateY(-3px);
     background-color: #ffffff;
     color: rgba(16, 29, 44, 0.9);
+  }
+
+  .floating-btn:active {
+    transform: translateY(-1px);
   }
 
   .floating-btn:focus {
