@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 import Meta from './Meta';
@@ -16,6 +17,13 @@ class Page extends Component {
       <ThemeProvider theme={theme}>
         <>
           <Meta></Meta>
+
+          <Head>
+            <link
+              rel='stylesheet'
+              href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'
+            />
+          </Head>
           {this.props.children}
         </>
       </ThemeProvider>

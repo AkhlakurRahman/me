@@ -29,7 +29,7 @@ const AboutStyles = styled.div`
 `;
 
 const About = () => (
-  <AboutStyles className='container'>
+  <AboutStyles className='container' id='about'>
     <h2>About Me</h2>
     <p>
       I'm a Full Stack Web Developer. Though I've completed my Bachelor in

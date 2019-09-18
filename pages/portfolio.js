@@ -18,7 +18,7 @@ const PortfolioStyles = styled.div`
 `;
 
 const Portfolio = () => (
-  <PortfolioStyles className='container'>
+  <PortfolioStyles className='container' id='portfolio'>
     <h2>My Portfolio</h2>
     <section className='items'>
       <PortfolioItem

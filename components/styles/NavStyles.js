@@ -11,6 +11,7 @@ const NavStyles = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     color: ${props => props.theme.color_primary};
+    cursor: pointer;
     padding: 0.5rem 1rem;
     margin-right: 1rem;
     transition: all 0.4s;

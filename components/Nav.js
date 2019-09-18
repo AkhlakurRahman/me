@@ -1,17 +1,32 @@
-import Link from '../utils/ActiveLink';
+import LinkCV from '../utils/ActiveLink';
+import { Link } from 'react-scroll';
 import NavStyles from './styles/NavStyles';
 
 const Nav = () => (
   <NavStyles>
-    <Link activeClassName='active' href='#about'>
-      <a>About</a>
+    <Link
+      activeClass='active'
+      to='about'
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={1000}
+    >
+      About
     </Link>
-    <Link activeClassName='active' href='#portfolio'>
-      <a>Portfolio</a>
+    <Link
+      activeClass='active'
+      to='portfolio'
+      spy={true}
+      smooth={true}
+      offset={-100}
+      duration={1000}
+    >
+      Portfolio
     </Link>
-    <Link activeClassName='active' href='#cv'>
-      <a>CV</a>
-    </Link>
+    <LinkCV href='/static/akhlakur_rahman_CV.pdf'>
+      <a target='_blank'>CV</a>
+    </LinkCV>
   </NavStyles>
 );
 

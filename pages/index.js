@@ -3,8 +3,8 @@ import React from 'react';
 import Intro from '../components/Intro';
 import About from './about';
 import Portfolio from './portfolio';
-import CV from './cv';
 import GetInTouch from '../components/GetInTouch';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
@@ -12,6 +12,7 @@ const Index = () => {
       <Intro />
       <About />
       <Portfolio />
+      <Footer />
       <GetInTouch />
     </div>
   );

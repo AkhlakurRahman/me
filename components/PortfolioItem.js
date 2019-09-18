@@ -5,13 +5,6 @@ import PortfolioItemStyles from './styles/PortfolioItemStyles';
 
 const PortfolioItem = ({ image, title, description }) => (
   <PortfolioItemStyles>
-    <Head>
-      <link
-        rel='stylesheet'
-        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'
-      />
-    </Head>
-
     <div className='port_items'>
       <div className='port_image'>
         <img src={`/static/${image}`} alt={title} />
@@ -23,12 +16,12 @@ const PortfolioItem = ({ image, title, description }) => (
       <div className='port_links'>
         <Link href='/'>
           <a>
-            <i class='fas fa-link'></i>
+            <i className='fas fa-link'></i>
           </a>
         </Link>
         <Link href='/'>
           <a>
-            <i class='fab fa-github'></i>
+            <i className='fab fa-github'></i>
           </a>
         </Link>
       </div>

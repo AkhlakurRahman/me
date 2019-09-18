@@ -21,12 +21,6 @@ class GetInTouch extends React.Component {
   render() {
     return (
       <GetInTouchStyles>
-        <Head>
-          <link
-            rel='stylesheet'
-            href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'
-          />
-        </Head>
         <div
           className={`social-panel-container ${
             this.state.isVisible ? 'visible' : null
