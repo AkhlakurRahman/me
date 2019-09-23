@@ -28,10 +28,17 @@ const PortfolioItemStyles = styled.div`
     h3 {
       font-size: 2.5rem;
       font-weight: 400;
+
+      @media (max-width: 700px) {
+        font-size: 2rem;
+      }
     }
 
     p {
       font-size: 1.4rem;
+      @media (max-width: 700px) {
+        font-size: 1.2rem;
+      }
     }
   }
 

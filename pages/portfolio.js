@@ -7,6 +7,10 @@ const PortfolioStyles = styled.div`
     font-weight: 400;
     text-align: center;
     margin: 7rem 0;
+
+    @media (max-width: 700px) {
+      font-size: 4rem;
+    }
   }
   .items {
     display: grid;
@@ -14,6 +18,11 @@ const PortfolioStyles = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 3.3rem;
     grid-row-gap: 3.3rem;
+
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 `;
 

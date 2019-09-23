@@ -28,10 +28,18 @@ const IntroStyles = styled.div`
       font-weight: 400;
       letter-spacing: 0.3rem;
       word-spacing: 0.5rem;
+
+      @media (max-width: 700px) {
+        font-size: 4rem;
+      }
     }
 
     span {
       font-size: 2rem;
+
+      @media (max-width: 700px) {
+        font-size: 1.5rem;
+      }
     }
   }
 `;
