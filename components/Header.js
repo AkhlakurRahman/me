@@ -19,15 +19,23 @@ const Logo = styled.h1`
     color: ${props => props.theme.color_primary};
     letter-spacing: 0.3rem;
   }
+
+  @media (max-width: 700px) {
+    position: absolute;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 
 const StyledHeader = styled.div`
   position: fixed;
-  display: grid;
-  padding: 2rem 0;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
   width: 100%;
   transition: all 0.4s ease;
+  z-index: 2;
   ${props =>
     props.scroll &&
     `
@@ -37,6 +45,9 @@ const StyledHeader = styled.div`
         color: #fff;
       }
     `};
+  @media (max-width: 700px) {
+    background: rgba(16, 29, 44, 0.95);
+  }
 `;
 
 class Header extends React.Component {
