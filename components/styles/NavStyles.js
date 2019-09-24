@@ -41,7 +41,7 @@ const NavStyles = styled.div`
     margin-right: 0;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     position: absolute;
     right: 0;
     height: 90vh;
@@ -57,6 +57,10 @@ const NavStyles = styled.div`
     a {
       margin-top: 5rem;
     }
+  }
+
+  @media (max-width: 500px) {
+    width: 40vh;
   }
 `;
 

@@ -12,7 +12,7 @@ const AboutStyles = styled.div`
     text-align: center;
     margin-top: 7rem;
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       font-size: 4rem;
     }
   }
@@ -21,7 +21,7 @@ const AboutStyles = styled.div`
     text-align: center;
     margin-bottom: 3rem;
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       font-size: 1.3rem;
       padding: 0.8rem;
     }
@@ -42,7 +42,7 @@ const AboutStyles = styled.div`
       margin-left: 3rem;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(4, 1fr);
       grid-column-gap: 1.5rem;

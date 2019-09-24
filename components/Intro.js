@@ -29,7 +29,7 @@ const IntroStyles = styled.div`
       letter-spacing: 0.3rem;
       word-spacing: 0.5rem;
 
-      @media (max-width: 700px) {
+      @media (max-width: 768px) {
         font-size: 4rem;
       }
     }
@@ -37,7 +37,7 @@ const IntroStyles = styled.div`
     span {
       font-size: 2rem;
 
-      @media (max-width: 700px) {
+      @media (max-width: 768px) {
         font-size: 1.5rem;
       }
     }

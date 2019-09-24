@@ -13,8 +13,8 @@ const Wrapper = styled.div`
   .nav-active {
     transform: translateX(0%);
 
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7), -5rem 0 0 0 black,
-      -10rem 0 0 0 red;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7), -5rem 0 0 0 #101d2c,
+      -10rem 0 0 0 #0e1925;
   }
 `;
 
@@ -27,7 +27,7 @@ const Hamburger = styled.div`
     background: ${props => props.theme.color_primary};
     margin: 0.5rem;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     position: absolute;
     right: 2rem;
     display: block;
@@ -37,6 +37,10 @@ const Hamburger = styled.div`
 class Nav extends React.Component {
   state = {
     sideNavVisibility: false
+  };
+
+  handleClose = () => {
+    this.setState({ sideNavVisibility: false });
   };
 
   handleOpen = () => {
@@ -60,6 +64,7 @@ class Nav extends React.Component {
             smooth={true}
             offset={-70}
             duration={1000}
+            onClick={this.handleClose}
           >
             About
           </Link>
@@ -70,10 +75,14 @@ class Nav extends React.Component {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={this.handleClose}
           >
             Portfolio
           </Link>
-          <LinkCV href='/static/akhlakur_rahman_CV.pdf'>
+          <LinkCV
+            href='/static/akhlakur_rahman_CV.pdf'
+            onClick={this.handleClose}
+          >
             <a target='_blank'>CV</a>
           </LinkCV>
         </NavStyles>

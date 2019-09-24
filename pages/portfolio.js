@@ -6,10 +6,12 @@ const PortfolioStyles = styled.div`
     font-size: 5rem;
     font-weight: 400;
     text-align: center;
-    margin: 7rem 0;
+    margin: 10rem 0;
 
-    @media (max-width: 700px) {
-      font-size: 4rem;
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 4rem;
+      }
     }
   }
   .items {
@@ -19,7 +21,7 @@ const PortfolioStyles = styled.div`
     grid-column-gap: 3.3rem;
     grid-row-gap: 3.3rem;
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
       justify-items: center;
     }

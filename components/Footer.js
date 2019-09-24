@@ -5,7 +5,7 @@ const FooterStyles = styled.footer`
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 15rem;
   background: ${props => props.theme.color_bg};
 
   color: ${props => props.theme.color_primary};

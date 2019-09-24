@@ -1,7 +1,7 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 
 import Nav from './Nav';
 
@@ -20,7 +20,7 @@ const Logo = styled.h1`
     letter-spacing: 0.3rem;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     position: absolute;
     font-size: 1.5rem;
     text-align: center;
@@ -45,7 +45,7 @@ const StyledHeader = styled.div`
         color: #fff;
       }
     `};
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     background: rgba(16, 29, 44, 0.95);
   }
 `;
