@@ -30,9 +30,7 @@ const NavStyles = styled.div`
       background: #fff;
     }
 
-    &:hover::after,
-    &:active,
-    &:focus {
+    &:hover::after {
       width: 100%;
       transition: width 0.2s;
     }
@@ -56,11 +54,12 @@ const NavStyles = styled.div`
     z-index: 2;
     a {
       margin-top: 5rem;
+      font-size: 1.4rem;
     }
   }
 
   @media (max-width: 500px) {
-    width: 40vh;
+    width: 38vh;
   }
 `;
 

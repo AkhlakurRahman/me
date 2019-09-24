@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
-import { animateScroll as scroll } from 'react-scroll';
 
 import Nav from './Nav';
 
@@ -22,8 +20,8 @@ const Logo = styled.h1`
 
   @media (max-width: 768px) {
     position: absolute;
+    left: -2rem;
     font-size: 1.5rem;
-    text-align: center;
   }
 `;
 
@@ -36,6 +34,7 @@ const StyledHeader = styled.div`
   width: 100%;
   transition: all 0.4s ease;
   z-index: 2;
+
   ${props =>
     props.scroll &&
     `
@@ -45,6 +44,7 @@ const StyledHeader = styled.div`
         color: #fff;
       }
     `};
+
   @media (max-width: 768px) {
     background: rgba(16, 29, 44, 0.95);
   }
@@ -69,17 +69,11 @@ class Header extends React.Component {
     window.removeEventListener('scroll');
   }
 
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   render() {
     return (
       <StyledHeader scroll={this.state.scroll}>
         <Logo>
-          <Link href='/' onClick={this.scrollToTop}>
-            Akhlakur Rahman
-          </Link>
+          <a href='/'>Akhlakur Rahman</a>
         </Logo>
         <Nav />
       </StyledHeader>

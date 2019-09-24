@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkCV from '../utils/ActiveLink';
+import ActiveLink from '../utils/ActiveLink';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
@@ -16,6 +16,18 @@ const Wrapper = styled.div`
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7), -5rem 0 0 0 #101d2c,
       -10rem 0 0 0 #0e1925;
   }
+
+  .toggle .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+
+  .toggle .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle .line:nth-child(3) {
+    transform: rotate(45deg) translate(-4px, -6px);
+  }
 `;
 
 const Hamburger = styled.div`
@@ -26,6 +38,7 @@ const Hamburger = styled.div`
     height: 0.2rem;
     background: ${props => props.theme.color_primary};
     margin: 0.5rem;
+    transition: all 0.4s;
   }
   @media (max-width: 768px) {
     position: absolute;
@@ -36,16 +49,21 @@ const Hamburger = styled.div`
 
 class Nav extends React.Component {
   state = {
-    sideNavVisibility: false
+    sideNavVisibility: false,
+    hamburgerCross: false
   };
 
   handleClose = () => {
-    this.setState({ sideNavVisibility: false });
+    this.setState({
+      sideNavVisibility: false,
+      hamburgerCross: false
+    });
   };
 
   handleOpen = () => {
     this.setState(prevState => ({
-      sideNavVisibility: !prevState.sideNavVisibility
+      sideNavVisibility: !prevState.sideNavVisibility,
+      hamburgerCross: !prevState.hamburgerCross
     }));
   };
 
@@ -66,7 +84,7 @@ class Nav extends React.Component {
             duration={1000}
             onClick={this.handleClose}
           >
-            About
+            About Me
           </Link>
           <Link
             activeClass='active'
@@ -79,15 +97,18 @@ class Nav extends React.Component {
           >
             Portfolio
           </Link>
-          <LinkCV
+          <ActiveLink
             href='/static/akhlakur_rahman_CV.pdf'
             onClick={this.handleClose}
           >
             <a target='_blank'>CV</a>
-          </LinkCV>
+          </ActiveLink>
         </NavStyles>
 
-        <Hamburger onClick={this.handleOpen}>
+        <Hamburger
+          className={`${this.state.hamburgerCross ? 'toggle' : ''}`}
+          onClick={this.handleOpen}
+        >
           <div className='line'></div>
           <div className='line'></div>
           <div className='line'></div>
