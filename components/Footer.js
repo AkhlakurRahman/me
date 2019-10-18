@@ -7,6 +7,7 @@ const FooterStyles = styled.footer`
   align-items: center;
   margin-top: 15rem;
   background: ${props => props.theme.color_bg};
+  font-family: ${props => props.theme.font_display};
 
   color: ${props => props.theme.color_primary};
   font-size: 2rem;

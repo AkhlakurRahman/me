@@ -9,9 +9,7 @@ const PortfolioStyles = styled.div`
     margin: 10rem 0;
 
     @media (max-width: 768px) {
-      h2 {
-        font-size: 4rem;
-      }
+      font-size: 4rem;
     }
   }
   .items {
@@ -19,7 +17,7 @@ const PortfolioStyles = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 3.3rem;
-    grid-row-gap: 3.3rem;
+    grid-row-gap: 10rem;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -33,45 +31,51 @@ const Portfolio = () => (
     <h2>My Portfolio</h2>
     <section className='items'>
       <PortfolioItem
-        image='portfolio.png'
+        image='sickfits.png'
         title='Sick Fits'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          veniam officia ducimus'
+        webLink='https://sickfits-next-apollo.herokuapp.com/'
+        gitHubLink='https://github.com/AkhlakurRahman/sick-fits'
+        description='E-commerce app using Node.js, Prisma, GraphQL on the backend and React.js, Apollo Client on the frontend'
       />
 
       <PortfolioItem
-        image='portfolio.png'
-        title='Sick Fits'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          veniam officia ducimus'
+        image='forkify.png'
+        title='Recipe App'
+        webLink='https://affectionate-clarke-308f47.netlify.com/'
+        gitHubLink='https://github.com/AkhlakurRahman/recipe-app'
+        description='Recipe searching app using Food2Fork API and vanilla Javascript'
       />
 
       <PortfolioItem
-        image='portfolio.png'
-        title='Sick Fits'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          veniam officia ducimus'
+        image='spacex.png'
+        title='SpaceX Missions'
+        webLink='https://spacex-launch-mission.herokuapp.com/'
+        gitHubLink='https://github.com/AkhlakurRahman/spacex-launch-missions'
+        description='SpaceX missions detail using SpaceX API and React.js(Next.js) with Hooks'
       />
 
       <PortfolioItem
-        image='portfolio.png'
-        title='Sick Fits'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          veniam officia ducimus'
+        image='github.png'
+        title='Github User Finder'
+        webLink='https://hardcore-ramanujan-c2650d.netlify.com/'
+        gitHubLink='https://github.com/AkhlakurRahman/github-user-finder'
+        description='GitHub user finder using GitHub API and React.js with Hooks'
       />
 
       <PortfolioItem
-        image='portfolio.png'
-        title='Sick Fits'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          veniam officia ducimus'
+        image='trilo.png'
+        title='Travel Landing Page'
+        webLink='https://condescending-pike-5e571c.netlify.com/'
+        gitHubLink='https://github.com/AkhlakurRahman/trillo'
+        description='One pager landing page using HTML and CSS flexbox'
       />
 
       <PortfolioItem
-        image='portfolio.png'
-        title='Sick Fits'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-          veniam officia ducimus'
+        image='headphones.png'
+        title='Landing Page'
+        webLink='https://loving-kilby-450b28.netlify.com/'
+        gitHubLink='https://github.com/AkhlakurRahman/headphones'
+        description='One pager landing page using HTML and CSS grid and flexbox'
       />
     </section>
   </PortfolioStyles>

@@ -55,8 +55,9 @@ const About = () => (
   <AboutStyles className='container' id='about'>
     <h2>About Me</h2>
     <p>
-      I'm a Full Stack Web Developer. Though I've completed my Bachelor in
-      Physics, I love to code. Here's my technical stack.
+      I'm a Full Stack Web Developer. I've completed my Bachelor in Physics from
+      Shahjalal University of Science and Technology. But I love to code. Here's
+      my technical stack.
     </p>
     <div className='tech_stack'>
       <img width='50' src='/static/html.png' alt='HTML' title='HTML 5' />

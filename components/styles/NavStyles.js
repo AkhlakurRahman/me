@@ -13,6 +13,7 @@ const NavStyles = styled.div`
     padding: 0.5rem 1rem;
     margin-right: 1rem;
     transition: all 0.4s;
+    font-weight: 400;
     &::after {
       content: '';
       display: block;

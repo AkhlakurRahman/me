@@ -82,9 +82,8 @@ class Nav extends React.Component {
             smooth={true}
             offset={-70}
             duration={1000}
-            onClick={this.handleClose}
           >
-            About Me
+            <span onClick={this.handleClose}>About Me</span>
           </Link>
           <Link
             activeClass='active'
@@ -93,15 +92,13 @@ class Nav extends React.Component {
             smooth={true}
             offset={-100}
             duration={1000}
-            onClick={this.handleClose}
           >
-            Portfolio
+            <span onClick={this.handleClose}>Portfolio</span>
           </Link>
-          <ActiveLink
-            href='/static/akhlakur_rahman_CV.pdf'
-            onClick={this.handleClose}
-          >
-            <a target='_blank'>CV</a>
+          <ActiveLink href='/static/akhlakur_rahman_CV.pdf'>
+            <a target='_blank'>
+              <span onClick={this.handleClose}>Résumé</span>
+            </a>
           </ActiveLink>
         </NavStyles>
 

@@ -1,29 +1,23 @@
-import Link from 'next/link';
-import Head from 'next/head';
-
 import PortfolioItemStyles from './styles/PortfolioItemStyles';
 
-const PortfolioItem = ({ image, title, description }) => (
+const PortfolioItem = ({ image, title, description, webLink, gitHubLink }) => (
   <PortfolioItemStyles>
     <div className='port_items'>
       <div className='port_image'>
-        <img src={`/static/${image}`} alt={title} />
+        <img src={`/static/example/${image}`} alt={title} />
       </div>
       <div className='port_desc'>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
       <div className='port_links'>
-        <Link href='/'>
-          <a>
-            <i className='fas fa-link'></i>
-          </a>
-        </Link>
-        <Link href='/'>
-          <a>
-            <i className='fab fa-github'></i>
-          </a>
-        </Link>
+        <a target='_blank' href={`${webLink}`}>
+          <i className='fas fa-link'></i>
+        </a>
+
+        <a target='_blank' href={`${gitHubLink}`}>
+          <i className='fab fa-github'></i>
+        </a>
       </div>
     </div>
   </PortfolioItemStyles>
