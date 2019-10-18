@@ -95,7 +95,7 @@ class Nav extends React.Component {
           >
             <span onClick={this.handleClose}>Portfolio</span>
           </Link>
-          <ActiveLink href='/static/akhlakur_rahman_CV.pdf'>
+          <ActiveLink href='/static/akhlakur_rahman_cv.pdf'>
             <a target='_blank'>
               <span onClick={this.handleClose}>Résumé</span>
             </a>

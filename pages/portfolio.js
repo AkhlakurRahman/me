@@ -35,7 +35,7 @@ const Portfolio = () => (
         title='Sick Fits'
         webLink='https://sickfits-next-apollo.herokuapp.com/'
         gitHubLink='https://github.com/AkhlakurRahman/sick-fits'
-        description='E-commerce app using Node.js, Prisma, GraphQL on the backend and React.js, Apollo Client on the frontend'
+        description='E-commerce app using Node.js, Prisma, GraphQL on the backend and Next.js, Apollo Client on the frontend'
       />
 
       <PortfolioItem
@@ -51,7 +51,7 @@ const Portfolio = () => (
         title='SpaceX Missions'
         webLink='https://spacex-launch-mission.herokuapp.com/'
         gitHubLink='https://github.com/AkhlakurRahman/spacex-launch-missions'
-        description='SpaceX missions detail using SpaceX API and React.js(Next.js) with Hooks'
+        description='SpaceX missions detail using SpaceX API, Apollo Client, React.js(Next.js) with Hooks'
       />
 
       <PortfolioItem
