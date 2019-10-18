@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,400&display=swap');
   *,
   *::before,
   *::after {
@@ -15,7 +16,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,400&display=swap');
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     line-height: 1.6;
