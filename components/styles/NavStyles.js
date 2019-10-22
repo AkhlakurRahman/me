@@ -19,7 +19,7 @@ const NavStyles = styled.div`
       display: block;
       width: 0;
       height: 2px;
-      background: #fff;
+      background: #5ab9ea;
       transition: width 0.2s;
     }
 
@@ -28,7 +28,7 @@ const NavStyles = styled.div`
       display: block;
       width: 100%;
       height: 2px;
-      background: #fff;
+      background: #5ab9ea;
     }
 
     &:hover::after {
@@ -46,7 +46,14 @@ const NavStyles = styled.div`
     height: 90vh;
     top: 10vh;
     width: 70vh;
-    background: rgba(16, 29, 44, 0.95);
+    background-image: linear-gradient(
+      to right bottom,
+      #84ceeb,
+      #96cced,
+      #a7caec,
+      #b5c9e9,
+      #c1c8e4
+    );
     display: flex;
     flex-direction: column;
     align-items: center;

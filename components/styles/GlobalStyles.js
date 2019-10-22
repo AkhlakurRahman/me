@@ -32,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::selection {
-    background-color: rgba(16, 29, 44, 0.75);
+    background-color: #5ab9ea;
     color: #dce6de;
   }
 `;

@@ -13,8 +13,7 @@ const Wrapper = styled.div`
   .nav-active {
     transform: translateX(0%);
 
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7), -5rem 0 0 0 #101d2c,
-      -10rem 0 0 0 #0e1925;
+    box-shadow: 0 2rem 6rem rgba(79, 152, 236, 0.7);
   }
 
   .toggle .line:nth-child(1) {
@@ -80,7 +79,7 @@ class Nav extends React.Component {
             to='about'
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={1000}
           >
             <span onClick={this.handleClose}>About Me</span>
@@ -90,7 +89,7 @@ class Nav extends React.Component {
             to='portfolio'
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={1000}
           >
             <span onClick={this.handleClose}>Portfolio</span>

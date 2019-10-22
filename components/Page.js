@@ -5,8 +5,8 @@ import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Meta from './Meta';
 
 const theme = {
-  color_primary: '#dce6de',
-  color_bg: '#101d2c',
+  color_primary: '#fff',
+  color_bg: '#222',
   font_primary: "'Nunito', sans-serif",
   font_display: "'Josefin Sans', sans-serif"
 };

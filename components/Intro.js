@@ -2,11 +2,21 @@ import Header from './Header';
 import styled from 'styled-components';
 
 const IntroStyles = styled.div`
-  background-image: linear-gradient(
-      rgba(16, 29, 44, 0.75),
-      rgba(16, 29, 44, 0.75)
-    ),
-    url(/static/hero.jpg);
+  background-image: radial-gradient(
+    circle,
+    #5ab9ea,
+    #62bdea,
+    #69c1ea,
+    #71c5eb,
+    #79c9eb,
+    #83caec,
+    #8dcbed,
+    #96cced,
+    #a3cbec,
+    #aec9ea,
+    #b8c9e8,
+    #c1c8e4
+  );
   background-size: cover;
   background-position: center;
   height: 100vh;

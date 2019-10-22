@@ -38,15 +38,22 @@ const StyledHeader = styled.div`
   ${props =>
     props.scroll &&
     `
-      background: rgba(16, 29, 44, 0.95);
-      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(to right top, #c1c8e4, #b5c9e9, #a7caec, #96cced, #84ceeb);
+    box-shadow: 0 2rem 6rem rgba(79, 152, 236, .7);
       a {
         color: #fff;
       }
     `};
 
   @media (max-width: 768px) {
-    background: rgba(16, 29, 44, 0.95);
+    background-image: linear-gradient(
+      to right top,
+      #c1c8e4,
+      #b5c9e9,
+      #a7caec,
+      #96cced,
+      #84ceeb
+    );
   }
 `;
 

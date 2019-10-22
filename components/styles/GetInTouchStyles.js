@@ -14,10 +14,10 @@ const GetInTouchStyles = styled.div`
   }
 
   .social-panel {
-    background-color: #fff;
+    background-color: #cad0e8;
     border-radius: 16px;
-    box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
-    border: 5px solid rgba(16, 29, 44, 0.9);
+    box-shadow: 0 16px 31px -17px #cad0e8;
+    border: 5px solid #5ab9ea;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +33,7 @@ const GetInTouchStyles = styled.div`
     border: 0;
     color: ${props => props.theme.color_primary};
     cursor: pointer;
-    background-color: ${props => props.theme.color_bg};
+    background-color: #5ab9ea;
     padding: 0.5rem 1rem;
     border-radius: 0.7rem;
     font-size: 20px;
@@ -50,6 +50,7 @@ const GetInTouchStyles = styled.div`
     margin: 20px 0;
     color: ${props => props.theme.color_bg};
     font-family: ${props => props.theme.font_primary};
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -67,9 +68,9 @@ const GetInTouchStyles = styled.div`
   }
 
   .social-panel ul li a {
-    border: 1px solid #dce1f2;
+    border: 1px solid #5ab9ea;
     border-radius: 50%;
-    color: rgba(16, 29, 44, 0.9);
+    color: #5ab9ea;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -88,9 +89,16 @@ const GetInTouchStyles = styled.div`
   .floating-btn {
     font-family: ${props => props.theme.font_display};
     border-radius: 26.5px;
-    background-color: rgba(16, 29, 44, 0.9);
-    border: 1px solid rgba(16, 29, 44, 0.9);
-    box-shadow: 0 16px 22px -17px #03153b;
+    background-image: linear-gradient(
+      to right bottom,
+      #84ceeb,
+      #96cced,
+      #a7caec,
+      #b5c9e9,
+      #c1c8e4
+    );
+    border: 1px solid #5ab9ea;
+    box-shadow: 0 16px 22px -17px #5ab9ea;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
@@ -106,7 +114,7 @@ const GetInTouchStyles = styled.div`
   .floating-btn:hover {
     transform: translateY(-3px);
     background-color: #ffffff;
-    color: rgba(16, 29, 44, 0.9);
+    color: #2d2d2d;
   }
 
   .floating-btn:active {
@@ -120,6 +128,10 @@ const GetInTouchStyles = styled.div`
   @media screen and (max-width: 480px) {
     .social-panel-container.visible {
       transform: translateX(0px);
+    }
+
+    .social-panel {
+      width: 350px;
     }
 
     .floating-btn {

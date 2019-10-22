@@ -1,16 +1,21 @@
 import styled from 'styled-components';
 
+const AboutBg = styled.div`
+  background-color: #cad0e8;
+`;
+
 const AboutStyles = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 15rem 0;
+  color: #2d2d2d;
 
   h2 {
     font-size: 5rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 7rem;
 
     @media (max-width: 768px) {
       font-size: 4rem;
@@ -49,79 +54,84 @@ const AboutStyles = styled.div`
       grid-row-gap: 7rem;
     }
   }
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 `;
 
 const About = () => (
-  <AboutStyles className='container' id='about'>
-    <h2>About Me</h2>
-    <p>
-      I'm a Full Stack Web Developer. I've completed my Bachelor of Science in
-      Physics from Shahjalal University of Science and Technology. But I love to
-      code. Here's my technical stack.
-    </p>
-    <div className='tech_stack'>
-      <img width='50' src='/static/html.png' alt='HTML' title='HTML 5' />
-      <img width='40' src='/static/css.png' alt='css' title='CSS 3' />
-      <img
-        width='50'
-        src='/static/javascript.png'
-        alt='javascript'
-        title='Javascript'
-      />
-      <img
-        width='100'
-        src='/static/node_js.png'
-        alt='node_js'
-        title='Node.js'
-      />
-      <img
-        width='100'
-        className='phone-margin-5-6'
-        src='/static/mongodb.png'
-        alt='mongodb'
-        title='MongoDB'
-      />
-      <img
-        width='90'
-        className='phone-margin-5-6'
-        src='/static/react_js.png'
-        alt='react_js'
-        title='React.js'
-      />
-      <img
-        width='100'
-        src='/static/next_js.png'
-        alt='next_js'
-        title='Next.js'
-      />
-      <img
-        width='100'
-        src='/static/redux_js.png'
-        alt='redux_js'
-        title='Redux.js'
-      />
-      <img
-        width='100'
-        src='/static/graphql.png'
-        alt='graphql'
-        title='GraphQL'
-      />
-      <img
-        width='90'
-        src='/static/apollo.png'
-        alt='apollo'
-        title='Apollo Client'
-      />
-      <img width='120' src='/static/prisma.png' alt='prisma' title='Prisma' />
-      <img
-        width='50'
-        className='phone-margin'
-        src='/static/python.png'
-        alt='python'
-        title='Python'
-      />
-    </div>
-  </AboutStyles>
+  <AboutBg>
+    <AboutStyles className='container' id='about'>
+      <h2>About Me</h2>
+      <p>
+        I'm a Full Stack Web Developer. I've completed my Bachelor of Science in
+        Physics from Shahjalal University of Science and Technology. But I love
+        to code. Here's my technical stack.
+      </p>
+      <div className='tech_stack'>
+        <img width='50' src='/static/html.png' alt='HTML' title='HTML 5' />
+        <img width='40' src='/static/css.png' alt='css' title='CSS 3' />
+        <img
+          width='50'
+          src='/static/javascript.png'
+          alt='javascript'
+          title='Javascript'
+        />
+        <img
+          width='100'
+          src='/static/node_js.png'
+          alt='node_js'
+          title='Node.js'
+        />
+        <img
+          width='100'
+          className='phone-margin-5-6'
+          src='/static/mongodb.png'
+          alt='mongodb'
+          title='MongoDB'
+        />
+        <img
+          width='90'
+          className='phone-margin-5-6'
+          src='/static/react_js.png'
+          alt='react_js'
+          title='React.js'
+        />
+        <img
+          width='100'
+          src='/static/next_js.png'
+          alt='next_js'
+          title='Next.js'
+        />
+        <img
+          width='100'
+          src='/static/redux_js.png'
+          alt='redux_js'
+          title='Redux.js'
+        />
+        <img
+          width='100'
+          src='/static/graphql.png'
+          alt='graphql'
+          title='GraphQL'
+        />
+        <img
+          width='90'
+          src='/static/apollo.png'
+          alt='apollo'
+          title='Apollo Client'
+        />
+        <img width='120' src='/static/prisma.png' alt='prisma' title='Prisma' />
+        <img
+          width='50'
+          className='phone-margin'
+          src='/static/python.png'
+          alt='python'
+          title='Python'
+        />
+      </div>
+    </AboutStyles>
+  </AboutBg>
 );
 
 export default About;
